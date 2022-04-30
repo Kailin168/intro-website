@@ -1,15 +1,19 @@
+* {
+    font-family: Verdana;
+    text-align: center;
+}
 body {
     background:#e1ecf7;
+    margin: 0%;
 }
 #bannerimage {
-    width: auto;
-    background-image: url("https://www.desktopbackground.org/p/2013/11/13/669229_free-coffee-shop-wallpapers-full-hd_1920x1080_h.jpg");
+    width: 100%;
+    background-image: url(image/Travel.jpg);
     height: 400px;
-    background-color: peru;
+    object-fit: contain;
     background-position: center;
 }
 .topnav {
-    background-color: white;
     overflow: hidden;
     float: right;
 }
@@ -18,13 +22,30 @@ body {
     text-align: center;
     padding: 14px;
     font-size: 15px;
-    font-family: Verdana;
 }
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
-.topnav a.active {
-    background-color: #04AA6D;
+
+#footercontact {
+    text-align: center;
+    padding:3px;
+    background-color: darkslategray;
     color: white;
+}
+
+.midnav {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.midnav img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #555;
+    margin: 50px;
 }
