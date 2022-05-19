@@ -3,9 +3,19 @@
     text-align: center;
 }
 body {
-    background:#e1ecf7;
+    background:#ffffff;
     margin: 0%;
 }
+
+h1 {
+text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 3px #0000ff, 0 0 5px #ee00ff;
+}
+
 #bannerimage {
     width: 100%;
     background-image: url(image/Travel.jpg);
@@ -31,7 +41,7 @@ body {
 #footercontact {
     text-align: center;
     padding:3px;
-    background-color: darkslategray;
+    background-color: #2f4f4f;
     color: white;
 }
 
