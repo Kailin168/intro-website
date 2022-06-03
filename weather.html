@@ -10,9 +10,18 @@
 <body>
     <div style="display: flex; flex-direction: column;">
         <h1>Weather Forecast</h1>
+        <select id="myselect" onchange="weatherInfo(this.value)">
+            <option value="">Choose an location:</option>
+            <option value="new%20york">New York</option>
+            <option value="la">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+          </select>
+        <h2 id="region">gjgj </h2>
+        <h2 id="temp">hkyhk</h2>
+        
     </div>
 </body>
-<!-- <script src="script.js"></script> -->
+<script src="weather.js"></script>
     <footer id="footercontact">
         <p>Author: Kai Lin</p>
         <p><a href="mailto:kailin8591@gmail.com">kailin8591@gmail.com</a></p>
