@@ -22,27 +22,33 @@ function weatherInfo(search) {
             const time = data.daily.time;
             const tempMax = data.daily.temperature_2m_max;
             const tempMin = data.daily.temperature_2m_min;
-            
+
             let timeString = ""
             for (let t of time) {
-            timeString += t;
-            timeString += "\n";
-        }
-            let tempMaxString = ""    
+                timeString += t;
+                timeString += "\n";
+            }
+            let tempMaxString = ""
             for (let p of tempMax) {
-            tempMaxString += p;
-            tempMaxString += "\n";
+                tempMaxString += p;
+                tempMaxString += "\n";
             }
-            let tempMinString = ""    
+            let tempMinString = ""
             for (let i of tempMin) {
-            tempMinString += i;
-            tempMinString += "\n";
+                tempMinString += i;
+                tempMinString += "\n";
             }
 
 
-            document.getElementById("time").innerText = timeString.slice(0,10) + "," + tempMaxString.slice(0,2) + "," + tempMinString.slice(0,2)
+            // document.getElementById("time").innerText = timeString.slice(0, 10) + "," + tempMaxString.slice(0, 2) + "," + tempMinString.slice(0, 2)
             // document.getElementById("tempMax").innerText = tempMaxString
             // document.getElementById("tempMin").innerText = tempMinString
         });
 }
 
+let newString = ""
+ for (let i = 0; i < time.length; i++) {
+     //98
+
+     newString += "\n"
+ }
