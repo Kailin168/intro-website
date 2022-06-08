@@ -38,17 +38,30 @@ function weatherInfo(search) {
                 tempMinString += i;
                 tempMinString += "\n";
             }
+            let newString = ""
+            for (let i = 0; i < time.length; i++) {
 
+                newString += time[i] + ", High: " + tempMax[i] + ", Low: " + tempMin[i] + "\n";
+                newString = newString.replace("2022-","Date: ")
+                newString = newString.replace("-","/")
+            //    newString += time [i] 
+            //    newString += tempMax[i]
+            //    newString += tempMin[i]
+            //    newString += "\n"
+               // let b = 0; b < tempMax.length; b++ 
+               // let c = 0; c < tempMin.length; i++
+               // newString=i + "," + b + "," + c
+               // newString.append (tempMax[i])
+               // newString.append (tempMin[i])
+               // Object.values(tempMax[i])
+               
+               
+            }
 
-            // document.getElementById("time").innerText = timeString.slice(0, 10) + "," + tempMaxString.slice(0, 2) + "," + tempMinString.slice(0, 2)
+            document.getElementById("time").innerText = newString
             // document.getElementById("tempMax").innerText = tempMaxString
             // document.getElementById("tempMin").innerText = tempMinString
         });
 }
 
-let newString = ""
- for (let i = 0; i < time.length; i++) {
-     //98
 
-     newString += "\n"
- }
